@@ -8,6 +8,9 @@ import { UserModule } from './user/user.module';
 
 import entities from './entities';
 
+//congigModule : .env global:true in every module usable
+
+
 
 @Module({
   imports: [CatsModule,ConfigModule.forRoot({isGlobal:true}),
