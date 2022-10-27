@@ -5,6 +5,7 @@ import { CatsModule } from './cats/cats.module';
 import { ConfigModule,ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
+import { PhotosModule } from './photos/photos.module';
 
 import entities from './entities';
 
@@ -28,7 +29,8 @@ import entities from './entities';
         }),
         inject:[ConfigService]
       }),
-      UserModule
+      UserModule,
+      PhotosModule
   ],
   controllers: [AppController],
   providers: [AppService],
